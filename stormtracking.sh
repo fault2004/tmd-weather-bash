@@ -11,6 +11,7 @@ usage() {
 	echo " view             view data"
 	echo " clear            clear data cache"
 	echo "This script using free RSS service from https://tmd.go.th/api/xml/storm-tracking"
+	exit 0
 }
 
 err() {
@@ -21,6 +22,7 @@ err() {
 viewdata() {
 	[ ! -f "$STORMDATA" ] && err 'data not found! please use "./stormtracking.sh get" first.'
 	more "$STORMDATA"
+	exit 0
 }
 
 cleardata() {
