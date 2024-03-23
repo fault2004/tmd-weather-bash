@@ -25,25 +25,25 @@ if [ "$1" == "help" ]; then
 fi
 
 summary() {
-	echo $W_TITLE
+	echo "$W_TITLE"
 	echo "======================================================"
-	echo $W_TEMP_FULL
-	echo $W_HUMID_FULL
-	echo $W_PRESS_FULL
-	echo $W_WIND_FULL
-	echo $W_VISI_FULL
-	echo $W_CLIMATE_FULL
-	echo $W_TLRAIN_FULL
-	echo $W_SUNRISE_FULL
-	echo $W_SUNSET_FULL
+	echo "$W_TEMP_FULL"
+	echo "$W_HUMID_FULL"
+	echo "$W_PRESS_FULL"
+	echo "$W_WIND_FULL"
+	echo "$W_VISI_FULL"
+	echo "$W_CLIMATE_FULL"
+	echo "$W_TLRAIN_FULL"
+	echo "$W_SUNRISE_FULL"
+	echo "$W_SUNSET_FULL"
 	echo "======================================================"
 }
 
 DATA=$(curl -s "https://tmd.go.th/api/xml/weather-report?stationnumber=${1}")
 
-W_TITLE=$(echo $DATA | xmlstarlet sel -t -v "(rss/channel/item/title)")
+W_TITLE=$(echo "$DATA" | xmlstarlet sel -t -v "(rss/channel/item/title)")
 
-W_INFO="$(echo $DATA | xmlstarlet sel -t -v "(rss/channel/item/description)" | sed 's/&lt;b&gt; //g' | sed 's/&lt;\/b&gt;//g')"
+W_INFO="$(echo "$DATA" | xmlstarlet sel -t -v "(rss/channel/item/description)" | sed 's/&lt;b&gt; //g' | sed 's/&lt;\/b&gt;//g')"
 
 # Temp
 W_TEMP=${W_INFO##*อุณหภูมิ : }
@@ -95,31 +95,31 @@ case $2 in
 		summary
 	;;
 	"temp")
-		echo $W_TEMP
+		echo "$W_TEMP"
 	;;
 	"humid")
-		echo $W_HUMID
+		echo "$W_HUMID"
 	;;
 	"press")
-		echo $W_PRESS
+		echo "$W_PRESS"
 	;;
 	"wind")
-		echo $W_WIND
+		echo "$W_WIND"
 	;;
 	"visi")
-		echo $W_VISI
+		echo "$W_VISI"
 	;;
 	"climate")
-		echo $W_CLIMATE
+		echo "$W_CLIMATE"
 	;;
 	"tlrain")
-		echo $W_TLRAIN
+		echo "$W_TLRAIN"
 	;;
 	"sunrise")
-		echo $W_SUNRISE
+		echo "$W_SUNRISE"
 	;;
 	"sunset")
-		echo $W_SUNSET
+		echo "$W_SUNSET"
 	;;
 	*)
 	;;
