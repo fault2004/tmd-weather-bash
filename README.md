@@ -112,3 +112,20 @@ type "./stormtracking.sh view" to view data
 ในช่วงวันที่ 19-20 มีนาคม 2567 บริเวณความกดอากาศสูงหรือมวลอากาศเย็นกำลังปานกลางจากประเทศจีนจะแผ่ลงมาปกคลุมประเทศไทยตอนบนและ
 --More--(0%)
 ```
+
+## stormtracking.sh Example - get and view latest data
+```
+terry@procn:~/prj/tmd-weather-bash$ ./stormtracking.sh get latest
+Downloading...
+Please wait, processing data...
+Saved in /home/terry/stormdata
+type "./stormtracking.sh view" to view data
+terry@procn:~/prj/tmd-weather-bash$ ./stormtracking.sh view cat
+
+
+
+พายุฤดูร้อนบริเวณประเทศไทย ฉบับที่ 8 (67/2567) (มีผลกระทบจนถึงวันที่ 20 มีนาคม 2567)
+บริเวณความกดอากาศสูงหรือมวลอากาศเย็นกำลังปานกลางจากประเทศจีน ได้แผ่ลงมาปกคลุมประเทศไทยตอนบนและทะเลจีนใต้แล้ว
+
+terry@procn:~/prj/tmd-weather-bash$ 
+```
