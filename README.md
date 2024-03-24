@@ -66,17 +66,6 @@ terry@procn:~/prj/tmd-weather-bash$ ./weather.sh 48567 sunset
 
 ## stormtracking.sh Usage
 ```
-terry@procn:~/prj/tmd-weather-bash$ ./stormtracking.sh 
-Usage: ./stormtracking.sh <mode> [options]
-mode:
- get [latest]     get data from TMD
- view [cat]       view data
- clear            clear data cache
-This script using free RSS service from https://tmd.go.th/api/xml/storm-tracking
-```
-
-## stormtracking.sh Example - get data
-```
 terry@procn:~/prj/tmd-weather-bash$ ./stormtracking.sh help
 Usage: ./stormtracking.sh <mode> [options]
 mode:
@@ -86,11 +75,17 @@ mode:
 This script using free RSS service from https://tmd.go.th/api/xml/storm-tracking
 ```
 
-## stormtracking.sh Example - view data
+## stormtracking.sh Example - get data
+```
+terry@procn:~/prj/tmd-weather-bash$ ./stormtracking.sh get
+Downloading...
+Please wait, processing data...
+Saved in /home/terry/stormdata
+type "./stormtracking.sh view" to view data
 ```
 
-
-
+## stormtracking.sh Example - view data
+```
 พายุฤดูร้อนบริเวณประเทศไทย ฉบับที่ 8 (67/2567) (มีผลกระทบจนถึงวันที่ 20 มีนาคม 2567)
 บริเวณความกดอากาศสูงหรือมวลอากาศเย็นกำลังปานกลางจากประเทศจีน ได้แผ่ลงมาปกคลุมประเทศไทยตอนบนและทะเลจีนใต้แล้ว 
 
