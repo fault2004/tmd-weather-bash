@@ -124,5 +124,6 @@ type "./stormtracking.sh view" to view data
 terry@procn:~/prj/tmd-weather-bash$ ./stormtracking.sh view cat
 พายุฤดูร้อนบริเวณประเทศไทย ฉบับที่ 8 (67/2567) (มีผลกระทบจนถึงวันที่ 20 มีนาคม 2567)
 บริเวณความกดอากาศสูงหรือมวลอากาศเย็นกำลังปานกลางจากประเทศจีน ได้แผ่ลงมาปกคลุมประเทศไทยตอนบนและทะเลจีนใต้แล้ว
+
 terry@procn:~/prj/tmd-weather-bash$ 
 ```
