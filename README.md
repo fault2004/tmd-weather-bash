@@ -11,7 +11,7 @@ requirements: ``bash``, ``curl`` and ``xmlstarlet``
 
 ## Using
 
-1. ``git clone https://github.com/fault2004/tmd-weather-bash``
+1. ``git clone https://github.com/fault2004/tmd-weather-bash && cd tmd-weather-bash``
 2. ``chmod +x *.sh``
 
 ## weather.sh Usage
