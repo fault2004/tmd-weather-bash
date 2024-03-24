@@ -1,4 +1,4 @@
-# TMD Weather in Bash
+# TMD Weather in Bash scripts.
 Get weather information in Thailand from free RSS service provided by Thai Meteorological Deapartment (TMD) in Bash script.
 
 This project is for education and ease of use only, to properly using their service, please use API provided by TMD.
@@ -9,7 +9,12 @@ requirements: ``bash``, ``curl`` and ``xmlstarlet``
 
 ดึงข้อมูลจาก: https://tmd.go.th/service/rss
 
-## Usage
+## Using
+
+1. ``git clone https://github.com/fault2004/tmd-weather-bash``
+2. ``chmod +x *.sh``
+
+## weather.sh Usage
 ```
 terry@procn:~/prj/tmd-weather-bash$ ./weather.sh help
 Usage: ./weather.sh <station_number> [options]
@@ -26,7 +31,7 @@ options (print specific information):
 This script using free RSS service from https://tmd.go.th/service/rss
 ```
 
-## Example - summary information
+## weather.sh Example - summary information
 ```
 terry@procn:~/prj/tmd-weather-bash$ ./weather.sh 48567
 รายงานสภาวะอากาศ - ตรัง : อ.เมือง จ.ตรัง วันที่ : 18/03/2024 เวลา 07:00 นาฬิกา
@@ -43,7 +48,7 @@ terry@procn:~/prj/tmd-weather-bash$ ./weather.sh 48567
 ======================================================
 ```
 
-## Example - print specific information
+## weather.sh Example - print specific information
 ```
 terry@procn:~/prj/tmd-weather-bash$ ./weather.sh 48567 temp
 24.0
