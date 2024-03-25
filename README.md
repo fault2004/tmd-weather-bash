@@ -127,3 +127,28 @@ terry@procn:~/prj/tmd-weather-bash$ ./stormtracking.sh view cat
 
 terry@procn:~/prj/tmd-weather-bash$ 
 ```
+
+## earthquake.sh Usage (same as stormtracking.sh)
+```
+terry@procn:~/prj/tmd-weather-bash$ ./earthquake.sh 
+Usage: ./earthquake.sh <mode> [options]
+mode:
+ get [latest]     get data from TMD - latest, get only latest data
+ view [cat]       view data - use cat for reading
+ clear            clear data cache
+This script using free RSS service from https://earthquake.tmd.go.th/feed/rss_inside.xml
+```
+
+## earthquake.sh - get and view latest data
+```
+terry@procn:~/prj/tmd-weather-bash$ ./earthquake.sh get latest
+Downloading...
+Please wait, processing data...
+Saved in /home/terry/earthquakedata
+type "./earthquake.sh view" to view data
+terry@procn:~/prj/tmd-weather-bash$ ./earthquake.sh view cat
+แผ่นดินไหว ประเทศเวียดนาม (21.937,106.339) ขนาด 4.5 วันที่ 25 มีนาคม 2567 เวลา 08:05 น. ตามเวลาประเทศไทย [TMD] #แผ่นดินไหว #กองเฝ้าระวังแผ่นดินไหว #earthquaketmd
+ 2024-03-25 08:05:23 น. Lat. 21.937 , Long. 106.339 ขนาด 4.5    
+
+terry@procn:~/prj/tmd-weather-bash$ 
+```
